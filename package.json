@@ -2,11 +2,12 @@
   "name": "mophy",
   "version": "0.0.0",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --prod",
-    "test": "NODE_OPTIONS=--openssl-legacy-provider ng test",
-    "lint": "NODE_OPTIONS=--openssl-legacy-provider ng lint",
-    "e2e": "NODE_OPTIONS=--openssl-legacy-provider ng e2e"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --prod --aot --build-optimizer",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
